@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron" style="background-color:blue">
+    <form asp-controller="Home" asp-action="ConnectDB" method="Get">
+        
+        <h1>Connect to DB</h1>
+        <button type="submit"  name="action">
+            <i class="far fa-file-excel"></i> Connect DB
+        </button>
+        
+    </form>
+</div>
+
+
+
+        @*<button type="submit" value="ExportToCsv" name="action">
+            <i class="fas fa-file-csv"></i> Export To Csv
+        </button>
+        <button type="submit" value="ExportToPdf" name="action">
+            <i class="far fa-file-pdf"></i> Export To Pdf
+        </button>*@
